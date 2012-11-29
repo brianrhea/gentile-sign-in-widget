@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign In Widget | PSD by Matt Gentile | HTML &amp; CSS by Brian Rhea</title>
+    <link rel="stylesheet" href="css/signin.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+  </head>
+  <body>
+
+    <div class="box">
+      <div id="head">
+        <h2 id="signin">Sign In</h2>
+        <h2 id="show"><a href="javascript:void(0)">Show Sign In Form</a></h2>
+        <a class="close" href="javascript:void(0)">&#x2715;</a>
+      </div>
+      <div id="body">
+        <form class="form" action="#">
+          <input type="text" name="userid" id="userid">
+          <input type="password" name="password" id="password">
+          <p>
+            <a href="javascript:void(0)">Forgot Username or Password?</a>
+          </p>
+          <input type="submit" id="submit" value="Log In">
+        </form>
+      </div>
+    </div>
+
+  </body>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#userid").focus();
+    });
+
+    $(".close").click(function() {
+      $("#body").slideUp();
+      $("#signin").fadeOut(10);
+      $("#show").fadeIn();
+    });
+
+    $("#show").click(function() {
+      $("#body").slideDown();
+      $("#show").fadeOut(10);
+      $("#signin").fadeIn();
+    });
+  </script>
+
+</html>
