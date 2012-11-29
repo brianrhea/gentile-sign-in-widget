@@ -114,6 +114,7 @@ input[type="submit"] {
 	padding: 8px 35px;
 	margin-bottom: 15px;
 	color: #fff;
+	cursor: pointer;
 
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 700;
